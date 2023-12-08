@@ -1,0 +1,26 @@
+.main-navigation {
+  display: flex;
+  overflow: auto;
+  gap: 10px;
+  padding-left: 16px;
+  padding-top: 0px;
+}
+.main-navigation::-webkit-scrollbar {
+  width: 0;
+}
+@media screen and (min-width: 768px) {
+  .main-navigation {
+    padding-left: 24px;
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .main-navigation {
+    gap: 2px;
+    padding-left: 30px;
+    padding-right: 37px;
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

@@ -1,0 +1,17 @@
+.about-us__text-container {
+  padding: 0 16px;
+  margin-top: -2px;
+}
+@media screen and (min-width: 768px) {
+  .about-us__text-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .about-us__text-container {
+    gap: 19px;
+  }
+}

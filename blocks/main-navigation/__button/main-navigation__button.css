@@ -1,0 +1,21 @@
+.main-navigation__button {
+  white-space: nowrap;
+  background: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  border: none;
+  color: #7e7e82;
+  padding: 6px 18px 6px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-navigation__button:hover {
+  opacity: 0.8;
+}
+@media screen and (min-width: 1120px) {
+  .main-navigation__button {
+    padding: 10px 26px 6px 22px;
+  }
+}

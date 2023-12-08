@@ -1,0 +1,9 @@
+.header__nav-button {
+  background: none;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header__nav-button:hover {
+  opacity: 0.8;
+}

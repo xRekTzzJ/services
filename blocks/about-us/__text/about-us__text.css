@@ -1,0 +1,23 @@
+.about-us__text {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .about-us__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    margin: 0;
+  }
+  .about-us__text:last-of-type::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+  }
+}
+@media screen and (min-width: 1120px) {
+  .about-us__text:last-of-type::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+  }
+}

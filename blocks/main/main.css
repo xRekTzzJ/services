@@ -1,0 +1,8 @@
+.main {
+  padding-top: 4px;
+}
+@media screen and (min-width: 1120px) {
+  .main {
+    padding-top: 22px;
+  }
+}
