@@ -4,6 +4,7 @@
   background-color: #f8f8f8;
   font-family: "TT Lakes";
   max-width: 1120px;
+  margin: 0 auto;
 }
 
 .header {
@@ -20,6 +21,7 @@
   border: 0;
   transition: 0.2s;
   cursor: pointer;
+  position: relative;
 }
 .header__menu-button:hover {
   opacity: 0.8;
@@ -36,6 +38,9 @@
   display: flex;
   gap: 16px;
   align-items: center;
+}
+.header__nav:first-of-type {
+  display: none;
 }
 .header__nav::before {
   content: "";
@@ -134,4 +139,64 @@
 .about-us__image {
   width: 320px;
   height: 176px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+  .header {
+    padding: 0 24px;
+  }
+  .header__menu-button::after {
+    content: "";
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15%;
+  }
+  .logo {
+    margin-left: 42px;
+  }
+  .header__nav:first-of-type {
+    display: flex;
+    padding-right: 20px;
+  }
+  .header__nav:first-of-type::before {
+    display: none;
+  }
+  .main-navigation {
+    padding-left: 24px;
+    padding-top: 8px;
+  }
+  .about-us__text-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-us__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    margin: 0;
+  }
+  .about-us__text:last-of-type::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: 314px 1fr;
+    gap: 48px;
+    padding: 32px 24px;
+  }
+  .about-us__image {
+    width: 100%;
+    height: 100%;
+  }
+  .about-us__read-more-button {
+    margin-top: 0;
+  }
 }
