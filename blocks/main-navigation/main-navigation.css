@@ -12,6 +12,7 @@
   .main-navigation {
     padding-left: 24px;
     padding-top: 8px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1120px) {
