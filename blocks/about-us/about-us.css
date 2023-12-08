@@ -18,6 +18,6 @@
     display: grid;
     grid-template-columns: 490px 1fr;
     gap: 36px;
-    padding: 0px 28px 0 34px;
+    padding: 16px 28px 0 34px;
   }
 }

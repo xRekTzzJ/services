@@ -13,5 +13,6 @@
   .about-us__image {
     height: 307px;
     margin-top: -10px;
+    padding-right: 28px;
   }
 }
