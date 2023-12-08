@@ -5,12 +5,13 @@
   font-family: "TT Lakes";
   max-width: 1120px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header {
   min-height: 88px;
   background-color: #ffffff;
-  padding: 0 16px;
+  padding: 0 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,13 +31,14 @@
   width: 96.55px;
   height: 50.81px;
   transition: 0.2s;
+  margin-left: -6px;
 }
 .logo:hover {
   opacity: 0.8;
 }
 .header__nav {
   display: flex;
-  gap: 16px;
+  gap: 0px;
   align-items: center;
 }
 .header__nav:first-of-type {
@@ -44,7 +46,7 @@
 }
 .header__nav::before {
   content: "";
-  margin-right: 4px;
+  margin-right: 14px;
   width: 2px;
   height: 32px;
   background-color: #eaeaea;
@@ -61,16 +63,19 @@
 .main {
   padding-top: 4px;
 }
+.mini-navigation {
+  display: none;
+}
 .title {
   font-size: 28px;
   line-height: 40px;
   letter-spacing: -0.6000000238418579px;
   text-align: left;
   height: 40px;
+  margin-bottom: 22px;
 }
 .title::before {
   margin-right: 12px;
-  max-height: 10px;
   content: "";
   width: 1px;
   margin-left: -4px;
@@ -82,7 +87,7 @@
   overflow: auto;
   gap: 10px;
   padding-left: 16px;
-  padding-top: 6px;
+  padding-top: 0px;
 }
 .main-navigation::-webkit-scrollbar {
   width: 0;
@@ -97,6 +102,11 @@
   border: none;
   color: #7e7e82;
   padding: 6px 18px 6px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-navigation__button:hover {
+  opacity: 0.8;
 }
 .main-navigation__button_active {
   border: 2px solid #b8ffec;
@@ -104,13 +114,14 @@
 }
 .about-us {
   color: #1b1c21;
-  padding-top: 10px;
+  padding-top: 0px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .about-us__text-container {
   padding: 0 16px;
+  margin-top: -2px;
 }
 .about-us__text {
   font-size: 14px;
@@ -127,11 +138,11 @@
   text-align: left;
   display: flex;
   gap: 16px;
-  margin-top: 15px;
+  margin-top: 14px;
   align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  margin-left: 8px;
+  margin-left: 3px;
 }
 .about-us__read-more-button:hover {
   opacity: 0.8;
@@ -139,6 +150,7 @@
 .about-us__image {
   width: 320px;
   height: 176px;
+  border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -198,5 +210,73 @@
   }
   .about-us__read-more-button {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+  .mini-navigation {
+    display: flex;
+    position: absolute;
+    top: 42px;
+    right: 32px;
+    gap: 34px;
+  }
+  .mini-navigation__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: right;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .mini-navigation__link:hover {
+    opacity: 0.8;
+  }
+  .main {
+    padding-top: 22px;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .title::before {
+    margin-right: 28px;
+  }
+  .main-navigation {
+    gap: 2px;
+    padding-left: 30px;
+    padding-right: 37px;
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .main-navigation__button {
+    padding: 10px 26px 6px 22px;
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: 490px 1fr;
+    gap: 36px;
+    padding: 0px 28px 0 34px;
+  }
+  .about-us__text-container {
+    gap: 19px;
+  }
+  .about-us__image {
+    height: 307px;
+    margin-top: -10px;
+  }
+  .about-us__text:last-of-type::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+  }
+  .about-us__read-more-button {
+    margin-left: 1;
+    margin-top: -6px;
   }
 }
